@@ -1,0 +1,316 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0b5563;
+    padding:140px;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    background:white;
+    padding:40px;
+    min-height:100vh;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+}
+
+.hero-left,
+.hero-center,
+.hero-right{
+    flex:1;
+}
+
+.hero-center{
+    display:flex;
+    justify-content:center;
+}
+
+.hero-center img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+}
+.hero-left h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero-left p{
+    line-height:1.8;
+}
+
+
+.hero-right h2{
+    font-size:40px;
+    text-align: right;
+}
+
+section{
+    margin-top:70px;
+}
+
+section h2{
+    margin-bottom:20px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    border:1px solid #ccc;
+    padding:20px 40px;
+}
+
+.project{
+    border:1px solid #ccc;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+#contact p{
+    margin-bottom:10px;
+}
+
+.cloud{
+    position:fixed;
+    background:white;
+    border-radius:50px;
+    opacity:0.25;
+    z-index:-1;
+}
+
+
+.cloud{
+    position:fixed;
+    background:white;
+    border-radius:50px;
+    opacity:0.2;
+    z-index:-1;
+}
+
+.cloud::before,
+.cloud::after{
+    content:"";
+    position:absolute;
+    background:white;
+    border-radius:50%;
+}
+
+.cloud1{
+    width:90px;
+    height:40px;
+    top:80px;
+    left:20px;
+}
+
+.cloud1::before{
+    width:40px;
+    height:40px;
+    top:-20px;
+    left:15px;
+}
+
+.cloud1::after{
+    width:50px;
+    height:50px;
+    top:-25px;
+    right:15px;
+}
+
+.cloud2{
+    width:70px;
+    height:30px;
+    top:250px;
+    left:40px;
+}
+
+.cloud2::before{
+    width:30px;
+    height:30px;
+    top:-15px;
+    left:10px;
+}
+
+.cloud2::after{
+    width:35px;
+    height:35px;
+    top:-18px;
+    right:10px;
+}
+
+
+.cloud3{
+    width:100px;
+    height:45px;
+    bottom:150px;
+    left:30px;
+}
+
+.cloud3::before{
+    width:45px;
+    height:45px;
+    top:-20px;
+    left:15px;
+}
+
+.cloud3::after{
+    width:55px;
+    height:55px;
+    top:-25px;
+    right:15px;
+}
+
+
+.cloud4{
+    width:80px;
+    height:35px;
+    top:120px;
+    right:30px;
+}
+
+.cloud4::before{
+    width:35px;
+    height:35px;
+    top:-15px;
+    left:12px;
+}
+
+.cloud4::after{
+    width:40px;
+    height:40px;
+    top:-20px;
+    right:12px;
+}
+
+.cloud5{
+    width:65px;
+    height:28px;
+    top:400px;
+    right:20px;
+}
+
+.cloud5::before{
+    width:28px;
+    height:28px;
+    top:-12px;
+    left:10px;
+}
+
+.cloud5::after{
+    width:32px;
+    height:32px;
+    top:-16px;
+    right:10px;
+}
+
+.cloud6{
+    width:95px;
+    height:40px;
+    bottom:120px;
+    right:40px;
+}
+
+.cloud6::before{
+    width:40px;
+    height:40px;
+    top:-18px;
+    left:15px;
+}
+
+.cloud6::after{
+    width:50px;
+    height:50px;
+    top:-24px;
+    right:15px;
+}
+
+/* Top Clouds */
+
+.cloud7{
+    width:70px;
+    height:30px;
+    top:20px;
+    left:25%;
+}
+
+.cloud8{
+    width:90px;
+    height:40px;
+    top:30px;
+    right:25%;
+}
+
+/* Bottom Clouds */
+
+.cloud9{
+    width:80px;
+    height:35px;
+    bottom:20px;
+    left:20%;
+}
+
+.cloud10{
+    width:100px;
+    height:45px;
+    bottom:25px;
+    right:20%;
+}
+
+/* Common shape for new clouds */
+
+.cloud7::before,
+.cloud8::before,
+.cloud9::before,
+.cloud10::before{
+    content:"";
+    position:absolute;
+    width:40px;
+    height:40px;
+    background:white;
+    border-radius:50%;
+    top:-18px;
+    left:15px;
+}
+
+.cloud7::after,
+.cloud8::after,
+.cloud9::after,
+.cloud10::after{
+    content:"";
+    position:absolute;
+    width:50px;
+    height:50px;
+    background:white;
+    border-radius:50%;
+    top:-22px;
+    right:15px;
+}
